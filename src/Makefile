@@ -10,15 +10,20 @@
 #*****************************************************************************
 
 #------------------------------------------------------------------------------
-# <Put a Description Here>
+# makefile for the cortex-M4 build system
 #
 # Use: make [TARGET] [PLATFORM-OVERRIDES]
 #
 # Build Targets:
-#      <Put a description of the supported targets here>
+#      <FILE>.o - Builds <FILE>.o object file
+#      build - Builds and links all source files
+#      all - Same as build
+#      clean - removes all generated files
 #
 # Platform Overrides:
-#      <Put a description of the supported Overrides here
+#      CPU - ARM Cortex Architecture (cortex-m0plus, cortex-m4)
+#      ARCH - ARM Architecture (arm, thumb)
+#      SPECS - Specs file to give the linker (nosys.specs, nano.specs)
 #
 #------------------------------------------------------------------------------
 include sources.mk
